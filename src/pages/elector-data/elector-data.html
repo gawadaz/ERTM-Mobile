@@ -1,0 +1,28 @@
+<!--
+  Generated template for the ElectorDataPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>מס בוחר {{ elector.SeqNumber }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding text-right>
+    <ion-card>
+        <ion-card-content text-right>
+          <ion-item text-right>ת.ז: {{ elector.key }}</ion-item>
+          <ion-item text-right>שם פרטי: {{ elector.FirstName }}</ion-item>
+          <ion-item text-right>שם משפחה: {{ elector.LastName }}</ion-item>            
+          <ion-item text-right>מספר בוחר {{ elector.SeqNumber }}</ion-item>         
+        </ion-card-content>
+    </ion-card>
+    <ion-footer>
+        <button ion-button large full text-right (click)="electorVoted(elector)">סמן שהצביע</button>
+    </ion-footer>    
+</ion-content>

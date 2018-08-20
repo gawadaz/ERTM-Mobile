@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      קלפי {{ selectedKlpe }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+    <ion-list>
+        <ion-list-header text-center>
+          בחר מספר בוחר
+        </ion-list-header>
+        <button text-center ion-item *ngFor="let elector of electorsList" (click)="itemSelected(elector)">
+          {{ elector.SeqNumber }}
+        </button>  
+    </ion-list>
+</ion-content>

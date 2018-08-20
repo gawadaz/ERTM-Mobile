@@ -86,3 +86,19 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+html[dir=“rtl”]{
+  body{
+  .alert-radio-group{
+  .button-inner{
+  .alert-radio-icon{
+  left: -23px;
+  }
+  .alert-radio-label{
+  text-align: right;
+  padding: 13px 35px;
+  }
+  }
+  }
+  }
+  }
